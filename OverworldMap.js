@@ -106,8 +106,8 @@ class OverworldMap {
 
 window.OverworldMaps = {
     Street: {
-        lowerSrc: "/assets/street1.png",
-        upperSrc: "/assets/street1B.png",
+        lowerSrc: "./assets/street1.png",
+        upperSrc: "./assets/street1B.png",
         gameObjects:{
 
             //trash cans??? 
@@ -117,7 +117,7 @@ window.OverworldMaps = {
                 isPlayerControlled: true, 
                 x: utilities.withGrid(15),
                 y: utilities.withGrid(31),
-                src: "/assets/healer3.png", 
+                src: "./assets/healer3.png", 
 
 
 
@@ -143,7 +143,7 @@ window.OverworldMaps = {
             healer2: new Person ({
                 x: utilities.withGrid(20),
                 y: utilities.withGrid(21),                
-                src: "/assets/healer2.png", 
+                src: "./assets/healer2.png", 
                 behaviorLoop: [
                     { type: "stand", direction: "down"},],
 
@@ -160,7 +160,7 @@ window.OverworldMaps = {
             teensy1: new Person ({
                 x: utilities.withGrid(6),
                 y: utilities.withGrid(18),
-                src: "/assets/teensy1.png",
+                src: "./assets/teensy1.png",
                 behaviorLoop: [
                     { type: "walk", direction: "down"},
                     { type: "walk", direction: "down"},
@@ -212,7 +212,7 @@ window.OverworldMaps = {
             teensy2: new Person ({
                 x: utilities.withGrid(42),
                 y: utilities.withGrid(9),
-                src: "/assets/teensy2.png",
+                src: "./assets/teensy2.png",
                 behaviorLoop: [
                     { type: "walk", direction: "down"},
                     { type: "walk", direction: "down"},
@@ -265,7 +265,7 @@ window.OverworldMaps = {
             teensy3: new Person ({
                 x: utilities.withGrid(11),
                 y: utilities.withGrid(0),
-                src: "/assets/teensy3.png",
+                src: "./assets/teensy3.png",
                 behaviorLoop: [
                     { type: "walk", direction: "right"},
                     { type: "walk", direction: "right"},
@@ -761,14 +761,14 @@ window.OverworldMaps = {
         }
     },
     DemoRoom: {
-        lowerSrc: "/assets/demoroom.png",
+        lowerSrc: "./assets/demoroom.png",
         // upperSrc: "",
         gameObjects: {
             healer3: new Person ({
                 isPlayerControlled: true, 
                 x: utilities.withGrid(2),
                 y: utilities.withGrid(2),
-                src: "/assets/healer3.png"
+                src: "./assets/healer3.png"
 
             }),
 
@@ -779,7 +779,7 @@ window.OverworldMaps = {
             healer2: new Person ({
                 x: utilities.withGrid(13),
                 y: utilities.withGrid(9),                
-                src: "/assets/healer2.png"
+                src: "./assets/healer2.png"
 
             })
         },
@@ -793,7 +793,7 @@ window.OverworldMaps = {
     },
 
     Outside: {
-        lowerSrc: "/assets/outside2.png",
+        lowerSrc: "./assets/outside2.png",
         // upperSrc: "",
         gameObjects: {
             healer1: new Person({
@@ -818,7 +818,7 @@ window.OverworldMaps = {
             healer2: new Person ({
                 x: utilities.withGrid(28),
                 y: utilities.withGrid(11),
-                src: "/assets/healer2.png",
+                src: "./assets/healer2.png",
                 // behaviorLoop: [
                 //     { type: "walk", direction: "left"},
                 //     {type: "stand", direction: "left", time: 800},
@@ -833,7 +833,7 @@ window.OverworldMaps = {
                 isPlayerControlled: true, 
                 x: utilities.withGrid(18),
                 y: utilities.withGrid(10),
-                src: "/assets/healer3.png"
+                src: "./assets/healer3.png"
 
             })
 
